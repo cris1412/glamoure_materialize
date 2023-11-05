@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+           cursor: url('images/cursor_2.png'), auto;
+       }
+       </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Glamoure
+        </title>
+
+        <link rel="stylesheet" href="\materialize\css\styles.css">
+        <link rel="stylesheet" href="\materialize\css\materialize.min.css">
+        <link rel="stylesheet" href="\materialize\css\materialize.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="\materialize\js\materialize.js"></script>
+        <script src="\materialize\js\materialize.min.js"></script>
+       
+        
+        <script>
+            $(document).ready(function () {
+              // Maneja el clic en los elementos del menú
+              $(".menu-a").click(function () {
+                // Cierra el navbar al hacer clic en un elemento del menú
+                $(".navbar-collapse").collapse("hide");
+              });
+            });
+          </script>
+          <script>
+          function mostrarModal1() {
+            var modal = document.getElementById("modal1");
+            modal.classList.add("mostrar");
+          }
+          
+          function cerrarModal1() {
+            var modal = document.getElementById("modal1");
+            modal.classList.remove("mostrar");
+          }     
+          </script>
+                 </script>
+                 <script>
+                 function mostrarModal2() {
+                   var modal = document.getElementById("modal2");
+                   modal.classList.add("mostrar");
+                 }
+                 
+                 function cerrarModal2() {
+                   var modal = document.getElementById("modal2");
+                   modal.classList.remove("mostrar");
+                 }     
+                 </script>
+                        </script>
+                        <script>
+                        function mostrarModal3() {
+                          var modal = document.getElementById("modal3");
+                          modal.classList.add("mostrar");
+                        }
+                        
+                        function cerrarModal3() {
+                          var modal = document.getElementById("modal3");
+                          modal.classList.remove("mostrar");
+                        }     
+                        </script>
+       
+    </head>
+  </head>
+  <body class="cuerpo">
+ 
+       <!-- Navbar -->
+          <nav class="navbar-contenedor">
+            <div class="nav-wrapper">
+                <ul class="center">
+                    <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+                    <li class="menu-li"><a  class="menu-a"href="agendar.html">Agendar Cita</a></li>
+                  <li class="menu-li"><img class="logotipo" src="images/ESTETICA.png" alt=""></li>
+                    <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
+                    <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+      <!-- carrusel -->    
+              <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="images/OFERTA_1.jpg" class="img-fluid w-100" alt="oferta1"></a>
+                <a class="carousel-item" href="#two!"><img src="images/OFERTA_2.jpg" class="img-fluid w-100 h-40" alt="oferta2"></a>
+                <a class="carousel-item" href="#three!"><img src="images/OFERTA_3.jpg" class="img-fluid w-100 h-40" alt="oferta3"></a>
+            </div>
+            </div>
+           
+
+
+    
+      <div class="container">
+          <div class="row">
+              <div class="col s1">
+                  <h1 class="titulos">Ofertas</h1>                  
+                  <div id="modal1" class="modal modal-contenido">
+                    <div>
+                      <h5 class="modal-titulo">Oferta 1</h4>
+                      <p class="modal-descripcion">Aquí va el contenido de la oferta.</p>
+                      <img src="images/oferta1.jpg" alt="Imagen" class="responsive-img">
+                    </div>
+                    <div class="modal-pie">
+                      <a href="#!" class="modal-close cerrar-modal">x</a>
+                    </div>
+                  </div>
+                  <div id="modal2" class="modal modal-contenido">
+                    <div>
+                      <h5 class="modal-titulo">Oferta 1</h4>
+                      <p class="modal-descripcion">Aquí va el contenido de la oferta.</p>
+                      <img src="images/oferta2.jpg" alt="Imagen" class="responsive-img">
+                    </div>
+                    <div class="modal-pie">
+                      <a href="#!" class="modal-close cerrar-modal">x</a>
+                    </div>
+                  </div>
+                  <div id="modal3" class="modal modal-contenido">
+                    <div>
+                      <h5 class="modal-titulo">Oferta 1</h4>
+                      <p class="modal-descripcion">Aquí va el contenido de la oferta.</p>
+                      <img src="images/oferta3.jpg" alt="Imagen" class="responsive-img">
+                    </div>
+                    <div class="modal-pie">
+                      <a href="#!" class="modal-close cerrar-modal">x</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+<div class="row">
+  <div class="col s4">
+    <div class="card">                   
+        <a href="#modal1" class="modal-trigger" data-target="modal1">
+            <img src="images/oferta1.jpg" class="img"style="width: 100%;">
+        </a>
+    </div>
+</div>
+<div class="col s4">
+    <div class="card">
+      <a href="#modal1" class="modal-trigger" data-target="modal2">
+        <img src="images/oferta2.jpg" class="img"style="width: 100%;">
+    </a>
+    </div>
+</div>
+<div class="col s4">
+    <div class="card">
+      <a href="#modal1" class="modal-trigger" data-target="modal2">
+        <img src="images/oferta3.jpg" class="img"style="width: 100%;">
+    </a>
+    </div>
+</div>
+
+</div>
+
+      </div>
+              
+              
+             
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col s4 xs12">
+                  <h1 class="titulos">Colaboradores</h1>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col s2">
+                  <div class="card2">
+                      <img src="images/estilista1.jpg" class="img2" alt="Avatar">
+                  </div>
+                  <div class="container">
+                      <div class="h2-subtitulos">
+                          <h4><b>Roxxane Richie</b></h4>
+                      </div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                  </div>
+              </div>
+              <div class="col s2">
+                  <div class="card2">
+                      <img src="images/estilista2.jpg" class="img2" alt="Avatar">
+                  </div>
+                  <div class="container">
+                      <div class="h2-subtitulos">
+                          <h4><b>Evan Petters</b></h4>
+                      </div>
+                      <span class="fa fa-star checked"></span>
+                      <span class "fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                  </div>
+              </div>
+              <div class="col s2">
+                  <div class="card2">
+                      <img src="images/estilista3.jpg" class="img2" alt="Avatar">
+                  </div>
+                  <div class="container">
+                      <div class="h2-subtitulos">
+                          <h4><b>José Eliberto</b></h4>
+                      </div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                  </div>
+              </div>
+              <div class="col s2">
+                  <div class="card2">
+                      <img src="images/estilista4.jpg" class="img2" alt="Avatar">
+                  </div>
+                  <div class="container">
+                      <div class="h2-subtitulos">
+                          <h4><b>Luis Javier</b></h4>
+                      </div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                  </div>
+              </div>
+              <div class="col s2">
+                  <div class="card2">
+                      <img src="images/estilista5.jpg" class="img2" alt="Avatar">
+                  </div>
+                  <div class="container">
+                      <div class="h2-subtitulos">
+                          <h4><b>Lina Quintero</b></h4>
+                      </div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                  </div>
+              </div>
+              <div class="col s2">
+                  <div class="card2">
+                      <img src="images/estilista6.jpg" class="img2" alt="Avatar">
+                  </div>
+                  <div class="container">
+                      <div class="h2-subtitulos">
+                          <h4><b>Eva Ferre</b></h4>
+                      </div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function () {
+              // Inicializar los elementos del carrusel
+              $('.carousel.carousel-slider').carousel({
+                  fullWidth: true
+              });
+  
+              // Inicializar los modales
+              $('.modal').modal();
+  
+              // Maneja el clic en los elementos del menú
+              $(".menu-a").click(function () {
+                  // Cierra el menú desplegable al hacer clic en un elemento del menú
+                  $(".sidenav").sidenav("close");
+              });
+          });
+      </script>
+  </body>
+  </html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      cursor: url('images/cursor_2.png'), auto;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glamoure
+  </title>
+
+  <link rel="stylesheet" href="bootstrap\css\styles.css">
+  <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/js/scripts.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Maneja el clic en los elementos del menú
+      $(".menu-a").click(function () {
+        // Cierra el navbar al hacer clic en un elemento del menú
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+  <script>
+    function mostrarModal1() {
+      var modal = document.getElementById("modal1");
+      modal.classList.add("mostrar");
+    }
+
+    function cerrarModal1() {
+      var modal = document.getElementById("modal1");
+      modal.classList.remove("mostrar");
+    }     
+  </script>
+  </script>
+  <script>
+    function mostrarModal2() {
+      var modal = document.getElementById("modal2");
+      modal.classList.add("mostrar");
+    }
+
+    function cerrarModal2() {
+      var modal = document.getElementById("modal2");
+      modal.classList.remove("mostrar");
+    }     
+  </script>
+  </script>
+  <script>
+    function mostrarModal3() {
+      var modal = document.getElementById("modal3");
+      modal.classList.add("mostrar");
+    }
+
+    function cerrarModal3() {
+      var modal = document.getElementById("modal3");
+      modal.classList.remove("mostrar");
+    }     
+  </script>
+
+
+</head>
+
+<body class="cuerpo">
+
+  <div class="navbar-contenedor">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-#000000">
+      <a class="navbar-brand my-brand" href="#"><img class="logotipo2" src="images/ESTETICA.png"
+          alt="logotipo-estetica"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+          <li class="menu-li"><a class="menu-a" href="agendar.html">Agendar Cita</a></li>
+          <li class="menu-li"><a class="menu-a" href="#"><img class="logotipo" src="images/ESTETICA.png" alt=""></a>
+          </li>
+          <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
+          <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
+          <!-- Agrega más elementos de navegación según sea necesario -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+  <!-- carrusel -->
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="titulos">Personalizar Cita</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="contenido col-12">
+            <div class="card2">
+              <img src="images/estilista6.jpg" class="img2" alt="Avatar" style="width:100%">
+            </div>
+            <div class="h2-subtitulos text-center col-12">
+              <h2 class="h2-subtitulos"><b>Eva Ferre</b></h4>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Elegir colaborador</button>
+              <div class="dropdown-content">
+                <a href="#">Roxxane Richie</a>
+                <a href="#">Evan Petters</a>
+                <a href="#">José Eliberto</a>
+                <a href="#">Luis Javier</a>
+                <a href="#">Lina Quintero</a>
+                <a href="#">Eva Ferre</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-10">
+          <h2 class="h2-subtitulos text-center">Noviembre</h2>
+          <div class="calendar" id="calendar"></div>
+        </div>
+        <script>
+          // Función para crear el calendario
+          function createCalendar() {
+            const calendar = document.getElementById("calendar");
+            const daysInMonth = 31; // Cambia esto para reflejar el número de días del mes
+
+            for (let day = 1; day <= daysInMonth; day++) {
+              const dayElement = document.createElement("div");
+              dayElement.classList.add("day");
+              dayElement.textContent = day;
+              dayElement.addEventListener("click", function () {
+                // Remueve la clase 'selected' de todos los días
+                const selectedDays = document.querySelectorAll(".day.selected");
+                selectedDays.forEach(function (selectedDay) {
+                  selectedDay.classList.remove("selected");
+                });
+
+                // Agrega la clase 'selected' al día seleccionado
+                dayElement.classList.add("selected");
+              });
+
+              calendar.appendChild(dayElement);
+            }
+          }
+
+          createCalendar();
+        </script>
+      </div>
+      <p class="h3-subtitulos">
+        Recuerde que la disponibilidad de los colaboradores varía en funcion del servicio seleccionado
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+            </div>
+            <form role="form">
+              <div class="form-group">
+
+                <label for="exampleInputEmail1" class="h2-subtitulos">
+                  Ingresa tu correo para recibir tu numero de cita
+                </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>
+
+              <div class="contenido">
+                <div class="dropdown center">
+                  <button class="dropbtn">Seleccionar servicio</button>
+                  <div class="dropdown-content">
+                    <a href="#">Corte de cabello</a>
+                    <a href="#">Depilación laser</a>
+                    <a href="#">Manicure</a>
+                    <a href="#">Arreglado de barba</a>
+                    <a href="#">Alaciado</a>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </form>
+            <div class="col-12 text-center"> <button type="submit" class="btn_aceptar" onclick="mostrarModal1()">
+                Agendar Cita
+              </button></div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+
+      <div id="modal1" class="modal">
+        <div class="modal-contenido">
+          <h5 class="modal-titulo" id="exampleModalLabel">ATENCIÓN</h5>
+          <p class="modal-descripcion">Cita agendada con éxito</p>
+          <img src="images/exito.png" alt="Imagen" class="img-fluid">
+          <div class="modal-pie">
+            <span class="cerrar-modal" onclick="cerrarModal1()">&times;</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>
