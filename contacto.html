@@ -1,193 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <style>
-        body {
-       cursor: url('images/cursor_2.png'), auto;
-   }
-   </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Glamoure
-        </title>
 
-        <link rel="stylesheet" href="bootstrap\css\styles.css">
-        <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css"
-            rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
-        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="bootstrap/js/scripts.js"></script>
-        <script src="bootstrap/js/popper.min.js"></script>
+<head>
+  <style>
+    body {
+      cursor: url('images/cursor_2.png'), auto;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glamoure
+  </title>
 
-        <script>
-            $(document).ready(function () {
-              // Maneja el clic en los elementos del menú
-              $(".menu-a").click(function () {
-                // Cierra el navbar al hacer clic en un elemento del menú
-                $(".navbar-collapse").collapse("hide");
-              });
-            });
-          </script>
-          <script>
-          function mostrarModal1() {
-            var modal = document.getElementById("modal1");
-            modal.classList.add("mostrar");
-          }
-          
-          function cerrarModal1() {
-            var modal = document.getElementById("modal1");
-            modal.classList.remove("mostrar");
-          }     
-          </script>
-                 </script>
-                 <script>
-                 function mostrarModal2() {
-                   var modal = document.getElementById("modal2");
-                   modal.classList.add("mostrar");
-                 }
-                 
-                 function cerrarModal2() {
-                   var modal = document.getElementById("modal2");
-                   modal.classList.remove("mostrar");
-                 }     
-                 </script>
-                        </script>
-                        <script>
-                        function mostrarModal3() {
-                          var modal = document.getElementById("modal3");
-                          modal.classList.add("mostrar");
-                        }
-                        
-                        function cerrarModal3() {
-                          var modal = document.getElementById("modal3");
-                          modal.classList.remove("mostrar");
-                        }     
-                        </script>
-       
-    </head>
-    <body class="cuerpo">
-    
-        <div class="navbar-contenedor">
-<nav class="navbar navbar-expand-lg navbar-dark bg-#000000">
-    <a class="navbar-brand my-brand" href="#"><img class="logotipo2" src="images/ESTETICA.png" alt="logotipo-estetica"></a>
+  <link rel="stylesheet" href="\materialize\css\styles.css">
+  <link rel="stylesheet" href="\materialize\css\materialize.min.css">
+  <link rel="stylesheet" href="\materialize\css\materialize.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="\materialize\js\materialize.js"></script>
+  <script src="\materialize\js\materialize.min.js"></script>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+
+  <script>
+    $(document).ready(function () {
+      // Maneja el clic en los elementos del menú
+      $(".menu-a").click(function () {
+        // Cierra el navbar al hacer clic en un elemento del menú
+        $(".navbar-collapse").collapse("hide");
+      });
+    });
+  </script>
+  <script>
+    function mostrarModal1() {
+      var modal = document.getElementById("modal1");
+      modal.classList.add("mostrar");
+    }
+
+    function cerrarModal1() {
+      var modal = document.getElementById("modal1");
+      modal.classList.remove("mostrar");
+    }     
+  </script>
+  </script>
+  <script>
+    function mostrarModal2() {
+      var modal = document.getElementById("modal2");
+      modal.classList.add("mostrar");
+    }
+
+    function cerrarModal2() {
+      var modal = document.getElementById("modal2");
+      modal.classList.remove("mostrar");
+    }     
+  </script>
+  </script>
+  <script>
+    function mostrarModal3() {
+      var modal = document.getElementById("modal3");
+      modal.classList.add("mostrar");
+    }
+
+    function cerrarModal3() {
+      var modal = document.getElementById("modal3");
+      modal.classList.remove("mostrar");
+    }     
+  </script>
+
+</head>
+
+<body class="cuerpo">
+  <nav class="navbar-contenedor">
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><img class="material-icons"
+          src="images/ESTETICA.png" alt="" width="150vh"></a>
+      <ul class="hide-on-med-and-down">
         <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
         <li class="menu-li"><a class="menu-a" href="agendar.html">Agendar Cita</a></li>
-        <li class="menu-li"><a class="menu-a" href="#"><img class="logotipo" src="images/ESTETICA.png" alt=""></a></li>
+        <li class="menu-li"><img class="logotipo" src="images/ESTETICA.png" alt=""></li>
         <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
         <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
-        <!-- Agrega más elementos de navegación según sea necesario -->
       </ul>
     </div>
   </nav>
+
+  <!-- Mobile Navbar (Sidenav) -->
+  <ul class="sidenav" id="mobile-demo">
+    <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+    <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+    <li class="menu-li"><a class="menu-a" href="agendar.html">Agendar Cita</a></li>
+    <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
+    <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
+  </ul>
+
+  <!-- Include Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Initialize the Materialize mobile navigation (sidenav) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+
+
+
+
+
+
+
+
+  <!-- carrusel -->
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col s1">
+          <h1 class="titulos">Contáctanos</h1>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
 
-     
-
-
-  
-        <!-- carrusel -->
-      
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-8"> 
-                    <h1 class="titulos">Contáctanos</h1></div>
-                </div>
+        <!-- MAPA -->
+        <div class="col s6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5365.983467275886!2d-92.92620052230252!3d18.01019376178717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7f4ffffffff%3A0x251d9c86591261a4!2zRXN0w6l0aWNhIELDqWxnaWNh!5e0!3m2!1ses-419!2smx!4v1698005760143!5m2!1ses-419!2smx"
+            width="100%" height="400vh" style="border:10;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2 class="h2-subtitulos">Información</h2>
+        <!-- DATOS DE LA ESTETICA -->
+        <div class="container">
+          <div class="row">
+            <div class="col s6">
+              <div class="texto-icono">
+                <img src="images/ubicacion.png" alt="icono-ubicacion" class="iconos">
+                <h3 class="h3-subtitulos">Dirección</h3>
+              </div>
+              <p class="p-texto">Ebanos 112, Fraccionamiento Framboyanes, 86020 Villahermosa, Tab.</p>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="container">
-                        <div class="row">
-                                      <!-- MAPA -->
-                                      <div class="col-6">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5365.983467275886!2d-92.92620052230252!3d18.01019376178717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7f4ffffffff%3A0x251d9c86591261a4!2zRXN0w6l0aWNhIELDqWxnaWNh!5e0!3m2!1ses-419!2smx!4v1698005760143!5m2!1ses-419!2smx" width="100%" height="400vh" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                      </div>
-                                      <!-- DATOS DE LA ESTETICA -->
-                                     <div class="col-6">
-                                      <h2 class="h2-subtitulos">Información</h2>
-                                      <div class="container">
-                                        <div class="row">
-                                          <div class="col-6">                                             
-                                                  <div class="col-2">
-                                                    <div class="texto-icono">
-                                                      <img src="images/ubicacion.png" alt="icono-ubicacion" class="iconos">                                                                                                
-                                                      <h3 class="h3-subtitulos">Dirección</h3>  
-                                                    </div>
-                                                  </div>                                                                    
-                                          </div>                                         
-                                        </div>
-                                                  <div class="col">
-                                                    <p class="p-texto">Ebanos 112, Fraccionamiento Framboyanes, 86020 Villahermosa, Tab.</p>
-                                                  </div>   
-                                      </div>
+            <div class="col s6">
+              <div class="texto-icono">
+                <img src="images/telefono.png" alt="icono-ubicacion" class="iconos">
+                <h3 class="h3-subtitulos">Teléfono</h3>
+              </div>
+              <p class="p-texto">9933256519</p>
+            </div>
+            <div class="col s6">
 
-                                     <div class="container">
-                                        <div class="row">
-                                          <div class="col-6">                                             
-                                                  <div class="col-2">
-                                                    <div class="texto-icono">
-                                                      <img src="images/telefono.png" alt="icono-ubicacion" class="iconos">                                                                                                
-                                                      <h3 class="h3-subtitulos">Teléfono</h3>  
-                                                    </div>
-                                                  </div>                                                                    
-                                          </div>                                         
-                                        </div>
-                                                  <div class="col">
-                                                    <p class="p-texto">9933256519</p>
-                                                  </div>   
-                                     </div>
-                                    
-
-                                     <div class="container">
-                                      <div class="row">
-                                        <div class="col-6">                                             
-                                                <div class="col">
-                                                  <div class="texto-icono">
-                                                    <img src="images/redes.png" alt="icono-ubicacion" class="iconos">                                                                                                
-                                                    <h3 class="h3-subtitulos">Redes sociales</h3>  
-                                                  </div>
-                                                </div>                                                                    
-                                        </div>                                         
-                                      </div>
-                                                <div class="col-6">
-                                                  <div class="texto-icono">
-                                                    <img src="images/facebook.png" alt="icono-ubicacion" class="iconos">                                                                                                
-                                                    <a href="#" class="p-texto">www.facebook.com/glamoure</a>  
-                                                  </div>
-                                               
-                                                <div class="col">
-                                                  <div class="texto-icono">
-                                                    <img src="images/instagram.png" alt="icono-ubicacion" class="iconos">                                                                                                
-                                                    <a href="#" class="p-texto">www.instagram.com/glamoure</a>                                                    
-                                                  </div>
-                                                </div>   
-                                              </div>   
-                                   </div>
-                                  
-                                  
-                                     </div>
-                                    
-                                </div>
-                              </div>
-                           
-                       
-                    </div>
-                </div>
-
-           
+              <div class="texto-icono">
+                <img src="images/redes.png" alt="icono-ubicacion" class="iconos">
+                <h3 class="h3-subtitulos">Redes sociales</h3>
+              </div>
+              <div class="texto-icono">
+                <img src="images/facebook.png" alt="icono-ubicacion" class="iconos">
+                <a href="#" class="p-texto">www.facebook.com/glamoure</a>
+              </div>
 
 
-           
+              <div class="texto-icono">
+                <img src="images/instagram.png" alt="icono-ubicacion" class="iconos">
+                <a href="#" class="p-texto">www.instagram.com/glamoure</a>
+              </div>
+
+
+            </div>
+
+          </div>
         </div>
 
-    </body>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
 </html>

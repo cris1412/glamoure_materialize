@@ -190,7 +190,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .h2-subtitulos {
   font-family: Voga;
   font-size: 5vh;
-
+  margin: 0%;
+  padding: 0%;
 }
 .h3-subtitulos {
   font-family: Voga;
@@ -211,8 +212,10 @@ flex: 1;
 
 }
 .p-texto{
+  margin: 0%;
+  padding: 0%;
 font-size: 3vh;
-display:inline;
+display:flex;
 text-decoration: none;
 color: black;
 }
@@ -245,6 +248,10 @@ border-radius: 10px;
 .img-historia2:hover{
 
 box-shadow: 10px 10px 0px 0#00986C;
+
+}
+.clear{
+  clear: both;
 
 }
 .checked {
