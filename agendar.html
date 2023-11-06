@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <style>
+        body {
+       cursor: url('images/cursor_2.png'), auto;
+   }
+   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamoure
+    </title>
 
-<head>
-  <style>
-    body {
-      cursor: url('images/cursor_2.png'), auto;
-    }
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glamoure
-  </title>
+    <link rel="stylesheet" href="\materialize\css\styles.css">
+    <link rel="stylesheet" href="\materialize\css\materialize.min.css">
+    <link rel="stylesheet" href="\materialize\css\materialize.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="\materialize\js\materialize.js"></script>
+    <script src="\materialize\js\materialize.min.js"></script>
+   
+    
+    <script>
+        $(document).ready(function () {
+          // Maneja el clic en los elementos del menú
+          $(".menu-a").click(function () {
+            // Cierra el navbar al hacer clic en un elemento del menú
+            $(".navbar-collapse").collapse("hide");
+          });
+        });
+      </script>
+      <script>
+      function mostrarModal1() {
+        var modal = document.getElementById("modal1");
+        modal.classList.add("mostrar");
+      }
+      
+      function cerrarModal1() {
+        var modal = document.getElementById("modal1");
+        modal.classList.remove("mostrar");
+      }     
+      </script>
+             </script>
+             <script>
+             function mostrarModal2() {
+               var modal = document.getElementById("modal2");
+               modal.classList.add("mostrar");
+             }
+             
+             function cerrarModal2() {
+               var modal = document.getElementById("modal2");
+               modal.classList.remove("mostrar");
+             }     
+             </script>
+                    </script>
+                    <script>
+                    function mostrarModal3() {
+                      var modal = document.getElementById("modal3");
+                      modal.classList.add("mostrar");
+                    }
+                    
+                    function cerrarModal3() {
+                      var modal = document.getElementById("modal3");
+                      modal.classList.remove("mostrar");
+                    }     
+                    </script>
+   
+</head>
+<body class="cuerpo">
+  <nav class="navbar-contenedor">
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><img class="material-icons" src="images/ESTETICA.png" alt="" width="150vh"></a>
+      <ul class="hide-on-med-and-down">
+        <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+        <li class="menu-li"><a class="menu-a" href="agendar.html">Agendar Cita</a></li>
+        <li class="menu-li"><img class="logotipo" src="images/ESTETICA.png" alt=""></li>
+        <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
+        <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <link rel="stylesheet" href="bootstrap\css\styles.css">
-  <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Mobile Navbar (Sidenav) -->
+  <ul class="sidenav" id="mobile-demo">
+    <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+    <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+    <li class="menu-li"><a class="menu-a" href="agendar.html">Agendar Cita</a></li>  
+    <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
+    <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
+  </ul>
 
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="bootstrap/js/scripts.js"></script>
-  <script src="bootstrap/js/popper.min.js"></script>
+  <!-- Include Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+  <!-- Initialize the Materialize mobile navigation (sidenav) -->
   <script>
-    $(document).ready(function () {
-      // Maneja el clic en los elementos del menú
-      $(".menu-a").click(function () {
-        // Cierra el navbar al hacer clic en un elemento del menú
-        $(".navbar-collapse").collapse("hide");
-      });
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
     });
   </script>
-  <script>
-    function mostrarModal1() {
-      var modal = document.getElementById("modal1");
-      modal.classList.add("mostrar");
-    }
-
-    function cerrarModal1() {
-      var modal = document.getElementById("modal1");
-      modal.classList.remove("mostrar");
-    }     
-  </script>
-  </script>
-  <script>
-    function mostrarModal2() {
-      var modal = document.getElementById("modal2");
-      modal.classList.add("mostrar");
-    }
-
-    function cerrarModal2() {
-      var modal = document.getElementById("modal2");
-      modal.classList.remove("mostrar");
-    }     
-  </script>
-  </script>
-  <script>
-    function mostrarModal3() {
-      var modal = document.getElementById("modal3");
-      modal.classList.add("mostrar");
-    }
-
-    function cerrarModal3() {
-      var modal = document.getElementById("modal3");
-      modal.classList.remove("mostrar");
-    }     
-  </script>
-
-
-</head>
-
-<body class="cuerpo">
-
-  <div class="navbar-contenedor">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-#000000">
-      <a class="navbar-brand my-brand" href="#"><img class="logotipo2" src="images/ESTETICA.png"
-          alt="logotipo-estetica"></a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
-          <li class="menu-li"><a class="menu-a" href="agendar.html">Agendar Cita</a></li>
-          <li class="menu-li"><a class="menu-a" href="#"><img class="logotipo" src="images/ESTETICA.png" alt=""></a>
-          </li>
-          <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
-          <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
-          <!-- Agrega más elementos de navegación según sea necesario -->
-        </ul>
-      </div>
-    </nav>
-  </div>
-
 
 
 
@@ -104,37 +107,46 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col s12">
           <h1 class="titulos">Personalizar Cita</h1>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-2">
-          <div class="contenido col-12">
+        <div class="col s2 center">
+          <div class="contenido ">
             <div class="card2">
               <img src="images/estilista6.jpg" class="img2" alt="Avatar" style="width:100%">
             </div>
-            <div class="h2-subtitulos text-center col-12">
+            <div class="h2-subtitulos">
               <h2 class="h2-subtitulos"><b>Eva Ferre</b></h4>
             </div>
-            <div class="dropdown">
-              <button class="dropbtn">Elegir colaborador</button>
-              <div class="dropdown-content">
-                <a href="#">Roxxane Richie</a>
-                <a href="#">Evan Petters</a>
-                <a href="#">José Eliberto</a>
-                <a href="#">Luis Javier</a>
-                <a href="#">Lina Quintero</a>
-                <a href="#">Eva Ferre</a>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.dropdown-trigger');
+                var instances = M.Dropdown.init(elems, {
+                  hover: true, // Specify any desired options here
+                });
+              });
+              </script>              
+              <div class="center s12">
+                <a class='dropdown-trigger dropbtn' href='#' data-target='dropdown1'>Elegir colaborador</a>       
               </div>
-            </div>
+                  
+              <!-- Dropdown Structure -->              
+              <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Roxxane Richie</a></li>
+                <li><a href="#!">Evan Petters</a></li>
+                <li><a href="#!">José Eliberto</a></li>
+                <li><a href="#!">Luis Javier</a></li>
+                <li><a href="#!">Eva Ferre</a></li>
+              </ul>
           </div>
 
         </div>
         <div class="col-10">
-          <h2 class="h2-subtitulos text-center">Noviembre</h2>
+          <h2 class="h2-subtitulos center">Noviembre</h2>
           <div class="calendar" id="calendar"></div>
         </div>
         <script>
@@ -178,31 +190,56 @@
             <form role="form">
               <div class="form-group">
 
-                <label for="exampleInputEmail1" class="h2-subtitulos">
-                  Ingresa tu correo para recibir tu numero de cita
-                </label>
+               <h2 class="h2-subtitulos"> Ingresa tu correo para recibir tu numero de cita</h2>
                 <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>
+              <div>
+                <p style="visibility: hidden;">Este texto está oculto, pero su espacio se reserva.</p>
+
               </div>
 
               <div class="contenido">
-                <div class="dropdown center">
-                  <button class="dropbtn">Seleccionar servicio</button>
-                  <div class="dropdown-content">
-                    <a href="#">Corte de cabello</a>
-                    <a href="#">Depilación laser</a>
-                    <a href="#">Manicure</a>
-                    <a href="#">Arreglado de barba</a>
-                    <a href="#">Alaciado</a>
+                <a class='dropdown-trigger dropbtn' href='#' data-target='dropdown2'>Seleccionar servicio</a>             
+                <!-- Dropdown Structure -->              
+                <ul id='dropdown2' class='dropdown-content'>
+                  <li><a href="#!">Corte de cabello</a></li>
+                  <li><a href="#!">Depilación laser</a></li>
+                  <li><a href="#!">Manicure</a></li>
+                  <li><a href="#!">Arreglado de barba</a></li>
+                  <li><a href="#!">Alaciado</a></li>
+                  <li><a href="#!">Corte de cabello infantíl</a></li>
+                </ul>
 
-                  </div>
-
-                </div>
+          
               </div>
 
             </form>
-            <div class="col-12 text-center"> <button type="submit" class="btn_aceptar" onclick="mostrarModal1()">
-                Agendar Cita
-              </button></div>
+            <div class="center">
+              <button data-target="modal1" class="btn_aceptar modal-trigger">Agendar Cita</button>
+            </div>
+           
+            <div id="modal1" class="modal modal-contenido">
+              <div>
+                <h5 class="modal-titulo">ATENCIÓN</h4>
+                <p class="modal-descripcion">Cita agendada con éxito</p>
+                <img src="images/exito.png" alt="Imagen" class="responsive-img">
+              </div>
+              <div class="modal-pie">
+                <a href="#!" class="modal-close cerrar-modal">x</a>
+              </div>
+            </div>
+          
+            <!-- Include Materialize JavaScript -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+            <!-- Initialize the modal -->
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+              });
+            </script>
           </div>
         </div>
       </div>
