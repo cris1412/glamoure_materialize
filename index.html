@@ -69,17 +69,38 @@
   <body class="cuerpo">
  
        <!-- Navbar -->
-          <nav class="navbar-contenedor">
-            <div class="nav-wrapper">
-                <ul class="center">
-                    <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
-                    <li class="menu-li"><a  class="menu-a"href="agendar.html">Agendar Cita</a></li>
-                  <li class="menu-li"><img class="logotipo" src="images/ESTETICA.png" alt=""></li>
-                    <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
-                    <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
-                </ul>
-            </div>
-        </nav>
+       <nav class="navbar-contenedor">
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><img class="material-icons" src="images/ESTETICA.png" alt="" width="150vh"></a>
+          <ul class="hide-on-med-and-down">
+            <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+            <li class="menu-li"><a class="menu-a" href="agendar.html">Agendar Cita</a></li>
+            <li class="menu-li"><img class="logotipo" src="images/ESTETICA.png" alt=""></li>
+            <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
+            <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <!-- Mobile Navbar (Sidenav) -->
+      <ul class="sidenav" id="mobile-demo">
+        <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+        <li class="menu-li"><a class="menu-a" href="index.html">Inicio</a></li>
+        <li class="menu-li"><a class="menu-a" href="agendar.html">Agendar Cita</a></li>  
+        <li class="menu-li"><a class="menu-a" href="contacto.html">Contacto</a></li>
+        <li class="menu-li"><a class="menu-a" href="info.html">Sobre Nosotros</a></li>
+      </ul>
+    
+      <!-- Include Materialize JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+      <!-- Initialize the Materialize mobile navigation (sidenav) -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems);
+        });
+      </script>
 
 
       <!-- carrusel -->    
