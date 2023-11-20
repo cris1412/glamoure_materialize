@@ -215,7 +215,7 @@ flex: 1;
   margin: 0%;
   padding: 0%;
 font-size: 3vh;
-display:flex;
+display: contents;
 text-decoration: none;
 color: black;
 }
@@ -225,7 +225,7 @@ color: black;
   margin-right: 20px;
   padding: 0%;
 border-radius: 10px;
-  max-width: 60vh;
+  max-width: 50vh;
   transition:0.5s; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -240,7 +240,7 @@ box-shadow: 10px 10px 0px 0#FEE702;
   margin-right: 20px;
   padding: 0%;
 border-radius: 10px;
-  max-width: 60vh;
+max-width: 50vh;
   transition:0.5s; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -430,11 +430,11 @@ align-items: center;
 
 /* Aquí se coloca la fuente de la pagina */
 @font-face {
-  font-family: 'MiFuentePersonalizada';
-  src: url('fonts/Voga.otf') format('otf'),
-    url('fonts/Voga.otf') format('otf');
+  font-family: 'Voga';
+  src: url('../../fonts/Voga.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
-
 /* Ajusta el tamaño para resoluciones debajo de x pixeles */
 @media only screen and (min-width: 992px) {
   .logotipo2 {
